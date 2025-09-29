@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'jointjs/dist/joint.css';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+:root,
+app-root {
+  height: 100%;
+}
+.app-shell {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 48px 1fr;
+}
+.app-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fafafa;
+  font: 600 14px system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+.diagram-host {
+  height: 100%;
+  position: relative;
+}
